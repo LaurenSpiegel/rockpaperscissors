@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <title>Play</title>
+  <style type="text/css">
+    h2 {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+    }
+    
+    @-moz-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+    
+    @-webkit-keyframes slidein {
+      from {
+        margin-left:100%;
+        width:300%
+      }
+      
+      to {
+        margin-left:0%;
+        width:100%;
+      }
+    }
+  </style>
+</head>
+<body>
+ <div class = 'jumbotron'>
+  <h1><%= @message %></h1>
+ </div>
+
+
+
+  <h2><b><%= @result %></b></h2>
+ 
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
